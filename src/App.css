@@ -1,0 +1,16 @@
+.background{
+  background-color: #fcfffd;
+  background-size: cover;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  border-width: 2px;
+  border-color: rgb(25, 0, 255);
+  border-style:inset;
+
+}
+.background-main{
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+}

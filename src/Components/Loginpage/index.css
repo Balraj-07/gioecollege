@@ -1,0 +1,18 @@
+.image{
+    height: 13vh;
+}
+.headCard{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.text{
+    color: blue;
+}
+.text_low{
+    color: red;
+}
+
+.button{
+    border-radius: 8px;
+}
