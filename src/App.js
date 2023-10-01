@@ -1,8 +1,8 @@
-import Loginpage from './Components/Loginpage';
+import Header from './Components/Header';
 import Navbar from './Components/navbar';
 import Home from './Components/Home';
 import Alerts from './Components/Alerts';
-import AboutCollege from './Components/AboutCollege';
+
 
 import './App.css';
 
@@ -18,9 +18,10 @@ function App() {
   return (
     <div className="background-main">
       <div className="background shadow-lg mb-5 bg-white rounded  ">
-        <div>
-            <AboutCollege/>
-        </div>
+        <Header />
+        <Navbar/>
+        <Home/>
+        <Alerts newsItems={newsItems}/>
       </div>
     </div>
   );
