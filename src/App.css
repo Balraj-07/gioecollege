@@ -3,15 +3,24 @@
   background-size: cover;
   width: 100%;
   border-width: 2px;
-  border-color: rgb(25, 0, 255);
+  padding: 0px;
   border-style:inset;
 
+}
+
+@media screen and (min-width:767px) {
+  .background-main{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+
+  }
 }
 .background-main{
   display: flex;
   justify-content: center;
   background-size: cover;
-  padding: 5vh;
 }
+
 /* src/App.css or your custom CSS file */
 
