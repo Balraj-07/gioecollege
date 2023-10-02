@@ -1,11 +1,21 @@
+import Alerts from "../Alerts"
 import './index.css'
 
 
 const Home = () =>{
     const ram = ""
     console.log(ram)
+    const newsItems = [
+        'Breaking News: React app created successfully!',
+        'Acme Corp. announces record profits',
+        'New product launch event scheduled for next week',
+        'Weather update: Sunny skies expected for the weekend',
+        'Local sports team wins championship',
+      ]
+    
     return(
-        <div className="home-main-container m-3 ">
+        <div >
+            <div className="home-main-container m-3 ">
                 <div id="carouselExampleIndicators" className="carousel slide shadow-lg mb-5 bg-white rounded caurosel-imgs" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -42,6 +52,10 @@ const Home = () =>{
                 </div>
                 <div className='news-announce-container'>
                     <h5 className="mt-3">News and Announcements</h5>
+                </div>
+                </div>
+                <div>
+                <Alerts newsItems={newsItems}/>
                 </div>
         </div>
     )
