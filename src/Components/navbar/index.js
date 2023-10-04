@@ -27,9 +27,24 @@ const Navbar = () =>{
                 <Link className="nav-link ml-2" to="#" style={{color:'white'}}>CAMPUS LIFE</Link>
             </li><li className="nav-item">
                 <Link className="nav-link ml-2" to="#" style={{color:'white'}}>FACILITIES</Link>
-            </li><li className="nav-item">
-                <Link className="nav-link ml-2" to="#" style={{color:'white'}}>DEPARTMENTS</Link>
-            </li><li className="nav-item">
+            </li>
+                <li className="nav-item nav-item dropdown" to="#" style={{color:'white'}}>
+                <a style={{color:'white'}} className="nav-link dropdown-toggle ml-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                DEPARTMENTS
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <Link className="dropdown-item" to="/branch/cse">DIPLOMA IN COMPUTER ENGINEERING</Link>
+                <Link className="dropdown-item" to="/branch/aiml">DIPLOMA IN AI&ML</Link>
+                <Link className="dropdown-item" to="/branch/ccb">DIPLOMA IN CLOUD COMPUTING AND BIG DATA </Link>
+                <Link className="dropdown-item" to="/branch/cps">DIPLOMA IN CYBER PHYSICAL SYSTEMS AND SECURITY </Link>
+                <Link className="dropdown-item" to="/branch/ece">DIPLOMA IN ELECTRONICS & COMMUNICATION ENGINEERING</Link>
+                <Link className="dropdown-item" to="/branch/eie">DIPLOMA IN ELECTRONICS & INSTRUMENTATION ENGINEERING</Link>
+                <Link className="dropdown-item" to="/branch/es">DIPLOMA IN EMBEDDED SYSTEMS ENGINEERING </Link>
+                <Link className="dropdown-item" to="/branch/bme">DIPLOMA IN BIOMEDICAL ENGINEERING </Link>
+                <Link className="dropdown-item" to="/branch/eve">DIPLOMA IN ELECTRONICS AND VIDEO ENGINEERING </Link>
+                </div>
+                </li>
+            <li className="nav-item">
                 <Link className="nav-link ml-2" to="#" style={{color:'white'}}>PLACEMENTS</Link>
             </li><li className="nav-item">
                 <Link className="nav-link ml-2" to="#" style={{color:'white'}}>STAFF</Link>
