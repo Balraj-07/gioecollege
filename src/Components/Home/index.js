@@ -1,12 +1,22 @@
-
+import Alerts from "../Alerts"
+import './index.css'
 
 
 const Home = () =>{
     const ram = ""
     console.log(ram)
+    const newsItems = [
+        'Breaking News: React app created successfully!',
+        'Acme Corp. announces record profits',
+        'New product launch event scheduled for next week',
+        'Weather update: Sunny skies expected for the weekend',
+        'Local sports team wins championship',
+      ]
+    
     return(
-        <div style={{marginRight:"20vh",display:"flex",justifyContent:'space-between'}} className="m-3 ml-5 ">
-                <div id="carouselExampleIndicators" class="carousel slide shadow-lg mb-5 bg-white rounded" style={{height:"%",width:'35%'}} data-ride="carousel">
+        <div >
+            <div className="home-main-container m-3 ">
+                <div id="carouselExampleIndicators" className="carousel slide shadow-lg mb-5 bg-white rounded caurosel-imgs" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -33,15 +43,19 @@ const Home = () =>{
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
-                <div style={{width:'28%'}}>
+                <div className='vision-mission-container'>
                     <h4 style={{color:'red',marginTop:'0vh',fontWeight:'initial'}}><em>Our Vision</em></h4>
                     <h5 style={{color:"#6600CC"}}>Striving for a symbiosis of technological excellence and human values.</h5>
                     <p></p>
                     <h4 style={{color:'green',fontWeight:'initial'}}><em>Our Mission</em></h4>
                     <h5 style={{color:'#6600CC'}}>To arm young brains with competitive technology and nurture holistic development of the individuals for a better tomorrow.</h5>
                 </div>
-                <div style={{width:'35%',textAlign:'center',backgroundColor:'blue',height:'50vh',backgroundSize:'cover',color:'white'}}>
+                <div className='news-announce-container'>
                     <h5 className="mt-3">News and Announcements</h5>
+                </div>
+                </div>
+                <div>
+                <Alerts newsItems={newsItems}/>
                 </div>
         </div>
     )

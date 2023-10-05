@@ -6,7 +6,7 @@ const AboutCollege =()=>{
     <div className="about-clg-main-container">
         <div className="about-clg-sub-container-1">
         <div className="about-clg-img-container">
-        <img src="https://res.cloudinary.com/dt0gevpkg/image/upload/v1694601360/samples/balloons.jpg" alt="clg name" className="about-clg-clg-img"/>
+        <img src="https://i.ytimg.com/vi/82W0-hPkbOk/hqdefault.jpg" alt="clg name" className="about-clg-clg-img"/>
         </div>
         <div className="about-clg-para-container">
         <p className="para">
