@@ -1,0 +1,47 @@
+@media screen and (min-width:747px) {
+.home-main-container{
+    display: flex;
+    flex-direction: row;
+}
+.vision-mission-container{
+    width: 30vw;
+}
+.caurosel-imgs{
+    width: 30%;
+    margin-right: 10px;
+}
+.news-announce-container{
+    width: 35%;
+    text-align: center;
+    background-color: blue;
+    height: 42vh;
+    background-size: cover;
+    color:white;
+}
+}
+
+@media screen and (max-width:747px) {
+    .home-main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .caurosel-imgs{
+        width: 100%;
+    }
+    .vision-mission-container{
+        width: 80vw;
+    }
+    .news-announce-container{
+        width: 90vw;
+        text-align: center;
+    background-color: blue;
+    height: 42vh;
+    background-size: cover;
+    color:white;
+    }
+
+    .navbar-hamburger{
+        color:white;
+        background-color: white;
+    }
+    }
